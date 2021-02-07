@@ -1,3 +1,5 @@
+# require python version 2
+
 __author__ = "Brad Duy"
 
 import sys
