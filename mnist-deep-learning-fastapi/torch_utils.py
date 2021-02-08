@@ -26,10 +26,10 @@ hiddenSize = 500
 numClasses = 10
 model = NeuralNet(inputSize, hiddenSize, numClasses)
 
-PATH = '../DL/mnist.pth'
+PATH = './DL/mnist.pth'
 model.load_state_dict(torch.load(PATH))
 model.eval()
-print('------------------', model.eval())
+
 # image -> tensor
 def transformImage(imageBytes):
     transform = transforms.Compose([
